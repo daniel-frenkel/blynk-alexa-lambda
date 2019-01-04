@@ -32,7 +32,6 @@
 /* Comment this out to disable prints and save space */
 #define BLYNK_PRINT Serial
 
-
 #include <WiFi.h>
 #include <WiFiClient.h>
 #include <BlynkSimpleEsp32.h>
@@ -64,7 +63,11 @@ void setup()
 
   pinMode(LED,OUTPUT);
 
-  Blynk.begin(auth, ssid, pass,"morningrod.blynk.cc");
+  //  Uncomment below to use a personal Server
+  // Blynk.begin(auth, ssid, pass,"your_server");
+  
+  // Use this if running on Blynk Server
+  Blynk.begin(auth, ssid, pass);
 }
 
 void loop()

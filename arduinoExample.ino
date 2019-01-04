@@ -41,12 +41,12 @@ int LED = 5;
 
 // You should get Auth Token in the Blynk App.
 // Go to the Project Settings (nut icon).
-char auth[] = "9a84fc07822c44589e6c449994d6bc47";
+char auth[] = "AUTH TOKEN";
 
 // Your WiFi credentials.
 // Set password to "" for open networks.
-char ssid[] = "Tony";
-char pass[] = "spockntony";
+char ssid[] = "WiFi";
+char pass[] = "password";
 
 BLYNK_WRITE(V1) {
   if(param.asInt()!=0){

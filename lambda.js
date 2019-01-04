@@ -10,7 +10,7 @@ exports.handler = async (event, context, callback) => {
               outputSpeech: 
                {
                  type: "PlainText",
-                 text: "I turned the L.E.D.  light on.", 
+                 text: "ok", 
                },
               shouldEndSession: true
               },
@@ -59,7 +59,7 @@ exports.handler = async (event, context, callback) => {
               outputSpeech: 
                {
                  type: "PlainText",
-                 text: "I turned the L.E.D.  light off.", 
+                 text: "ok", 
                },
               shouldEndSession: true
               },

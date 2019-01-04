@@ -32,10 +32,6 @@
 /* Comment this out to disable prints and save space */
 #define BLYNK_PRINT Serial
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 03d9370ea71844b622804ec3211be664b3ac33a0
 #include <WiFi.h>
 #include <WiFiClient.h>
 #include <BlynkSimpleEsp32.h>
@@ -49,11 +45,7 @@ char auth[] = "AUTH TOKEN";
 // Your WiFi credentials.
 // Set password to "" for open networks.
 char ssid[] = "WiFi";
-<<<<<<< HEAD
-char pass[] = "password";
-=======
 char pass[] = "Password";
->>>>>>> 03d9370ea71844b622804ec3211be664b3ac33a0
 
 BLYNK_WRITE(V1) {
   if(param.asInt()!=0){
@@ -71,15 +63,11 @@ void setup()
 
   pinMode(LED,OUTPUT);
 
-<<<<<<< HEAD
-  Blynk.begin(auth, ssid, pass,"morningrod.blynk.cc");
-=======
   //  Uncomment below to use a personal Server
   // Blynk.begin(auth, ssid, pass,"your_server");
-  
+
   // Use this if running on Blynk Server
   Blynk.begin(auth, ssid, pass);
->>>>>>> 03d9370ea71844b622804ec3211be664b3ac33a0
 }
 
 void loop()

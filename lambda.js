@@ -1,20 +1,16 @@
 const http = require('http');
 
 exports.handler = async (event, context, callback) => {
-    
+
     console.log(event.request.intent)
     if (event.request.intent.slots.OnOff.value == "on") {
         var responseJson =  {
             version: "1.0",
             response: {
-              outputSpeech: 
+              outputSpeech:
                {
                  type: "PlainText",
-<<<<<<< HEAD
-                 text: "ok", 
-=======
-                 text: "OK", 
->>>>>>> 03d9370ea71844b622804ec3211be664b3ac33a0
+                 text: "OK",
                },
               shouldEndSession: true
               },
@@ -24,7 +20,7 @@ exports.handler = async (event, context, callback) => {
         return new Promise((resolve, reject) => {
         const options = {
             host: 'blynk-cloud.com',
-            path: '/<your auth token>/update/<your pin>?value=<a value for the pin>',
+            path: '/<your auth token>/update/V1?value=1',
             port: 80,
             method: 'GET'
         };
@@ -39,10 +35,10 @@ exports.handler = async (event, context, callback) => {
           var responseJson =  {
             version: "1.0",
             response: {
-              outputSpeech: 
+              outputSpeech:
                {
                  type: "PlainText",
-                 text: "I got an error from Blink", 
+                 text: "I got an error from Blink",
                },
               shouldEndSession: true
               },
@@ -60,14 +56,10 @@ exports.handler = async (event, context, callback) => {
             var responseJson =  {
             version: "1.0",
             response: {
-              outputSpeech: 
+              outputSpeech:
                {
                  type: "PlainText",
-<<<<<<< HEAD
-                 text: "ok", 
-=======
-                 text: "OK", 
->>>>>>> 03d9370ea71844b622804ec3211be664b3ac33a0
+                 text: "OK",
                },
               shouldEndSession: true
               },
@@ -75,7 +67,7 @@ exports.handler = async (event, context, callback) => {
         };
         const options = {
             host: 'blynk-cloud.com',
-            path: '/<your auth token>/update/<your pin>?value=<a value for the pin>',
+            path: '/<your auth token>/update/V1?value=0',
             port: 80,
             method: 'GET'
         };
@@ -90,10 +82,10 @@ exports.handler = async (event, context, callback) => {
           var responseJson =  {
             version: "1.0",
             response: {
-              outputSpeech: 
+              outputSpeech:
                {
                  type: "PlainText",
-                 text: "I got an error from Blink", 
+                 text: "I got an error from Blink",
                },
               shouldEndSession: true
               },

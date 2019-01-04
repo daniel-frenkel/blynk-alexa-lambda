@@ -10,7 +10,11 @@ exports.handler = async (event, context, callback) => {
               outputSpeech: 
                {
                  type: "PlainText",
+<<<<<<< HEAD
                  text: "ok", 
+=======
+                 text: "OK", 
+>>>>>>> 03d9370ea71844b622804ec3211be664b3ac33a0
                },
               shouldEndSession: true
               },
@@ -59,7 +63,11 @@ exports.handler = async (event, context, callback) => {
               outputSpeech: 
                {
                  type: "PlainText",
+<<<<<<< HEAD
                  text: "ok", 
+=======
+                 text: "OK", 
+>>>>>>> 03d9370ea71844b622804ec3211be664b3ac33a0
                },
               shouldEndSession: true
               },
